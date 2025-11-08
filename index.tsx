@@ -1,0 +1,20 @@
+// FIX: Replaced placeholder content with a functional React application entry point.
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import ErrorBoundary from './ErrorBoundary';
+
+const container = document.getElementById('root');
+
+if (container) {
+  const root = ReactDOM.createRoot(container);
+  root.render(
+    <React.StrictMode>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </React.StrictMode>
+  );
+} else {
+    console.error('Root container missing in index.html');
+}

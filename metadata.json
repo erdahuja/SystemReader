@@ -1,0 +1,4 @@
+{
+  "name": "AI Code Fixer",
+  "description": "An application to manage code files and fix them using AI. Files are stored in Supabase."
+}
